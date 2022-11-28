@@ -2,7 +2,7 @@ const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
 const { expect } = require("chai");
 const { ethers, upgrades } = require("hardhat");
 
-describe("BlackToken", function () {
+describe("BlackNFT", function () {
   async function deployFixture() {
     const [owner, otherAccount] = await ethers.getSigners();
     const BlackNFT = await ethers.getContractFactory("BlackNFT");
